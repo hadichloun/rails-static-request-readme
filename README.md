@@ -1,4 +1,4 @@
-# Rails Static Request
+<!-- # Rails Static Request
 
 ## Routing
 
@@ -20,9 +20,9 @@ Before we dive into the code and routing configurations, it helps to know how HT
 
 Let's try this out in our application. I'm going to use a blogging application as a case study in this lesson.
 
-To begin, start up the Rails server and go to `localhost:3000/about`. As you will see, this throws a routing error: `No route matches [GET] "/about"`. To fix this, stop the Rails server by pressing `control + c`. (Anytime you make a routing change you need to restart the Rails server.)
+To begin, start up the Rails server and go to `localhost:3000/about`. As you will see, this throws a routing error: `No route matches [GET] "/about"`. To fix this, stop the Rails server by pressing `control + c`. (Anytime you make a routing change you need to restart the Rails server.) -->
 
-Now draw the route by opening the `config/routes.rb` file and adding the following route inside of the `draw` block:
+<!-- Now draw the route by opening the `config/routes.rb` file and adding the following route inside of the `draw` block:
 
 ```ruby
 get 'about', to: 'static#about'
@@ -58,9 +58,9 @@ def about
 end
 ```
 
-Hitting refresh in the browser will give you a 'Template is missing' error; specifically, it says: `Missing template static/about...`. Also note that you do not have to restart the Rails server here. As long as your changes are within the `app` directory, you can keep the server going; only code changes outside of the `app` directory require stopping and starting the Rails server.
+Hitting refresh in the browser will give you a 'Template is missing' error; specifically, it says: `Missing template static/about...`. Also note that you do not have to restart the Rails server here. As long as your changes are within the `app` directory, you can keep the server going; only code changes outside of the `app` directory require stopping and starting the Rails server. -->
 
-We're very close to getting our view to show up. Rails gives us two options for how views are mapped between the controller and view files. It's important to understand the difference between explicit and implicit rendering for the views:
+<!-- We're very close to getting our view to show up. Rails gives us two options for how views are mapped between the controller and view files. It's important to understand the difference between explicit and implicit rendering for the views:
 
 * **Explicit rendering** - for explicit rendering, Rails lets you dictate which view file you want to have the controller action mapped to.
 * **Implicit rendering** - for implicit rendering, Rails follows a standard convention that automatically looks for the view file with the same name as the controller action.
@@ -130,4 +130,4 @@ If, when running `bundle install`, you get an error installing Puma, run the fol
 
 ```sh
 gem install puma:4.3.5 -- --with-cflags="-Wno-error=implicit-function-declaration"
-```
+``` -->
